@@ -1,10 +1,16 @@
-@ primos.s 
-@ find and print first 500 primes
-@ This program finds and prints the first 500 prime numbers. It is based on the program presented in Knuth’s classic The Art of Computer Programming.
-@ The code itself is pretty heavily commented, so I don’t think much further explanation is needed.
-@ I have used the number printing routine described in my earlier blog post to handle the output in this example.
-@ based on Knuth TAOCP vol. 1 147ff
-@ I've used the labels and variables Knuth uses, up to a point.
+@  
+@  Title: Practica 0 Templete para programa ARM Assembly   
+@  Filename: primos.s
+@  Autor: ____Ortega Ramos Yahir___
+@  Date: ______
+@  Description : Hola Mundo en ARM Assembly
+@  Imput: -
+@  Ouput: HOLA MUNDO to console
+@  
+@------------------------------------
+@   HIGH LEVEL LANGUAGE
+
+Esta sección es donde se declaran y se inicializan las variables y los datos que se usarán en el programa.
 
 @@@@@@@@@@@@@
 @ registers @
@@ -29,7 +35,7 @@ len = . - spc
 nl: 			@ just a newline
 	.ascii "\n"
 limit:			@ index of last prime we need
-	.long 500 
+	.long 100
 
 .section .text
 .globl	_start
