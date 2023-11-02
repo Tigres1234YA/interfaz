@@ -13,7 +13,7 @@
 @ r1 points to address of "prime"
 @ r3 number we are checking 	(N in Knuth)
 @ r4 count of primes		(J in Knuth)
-@ r5 divisors we are checking	
+@ r5 divisors we are checking
 @ r6 index for the prime divisors
 @ r7 will hold remainder	(R in Knuth)
 @ r8 will hold quotient		(Q in Knuth)
@@ -29,7 +29,7 @@ len = . - spc
 nl: 			@ just a newline
 	.ascii "\n"
 limit:			@ index of last prime we need
-	.long 500 
+	.long 100
 
 .section .text
 .globl	_start
