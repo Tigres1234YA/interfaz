@@ -29,7 +29,7 @@ len = . - spc
 nl: 			@ just a newline
 	.ascii "\n"
 limit:			@ index of last prime we need
-	.long 500 
+	.long 100
 
 .section .text
 .globl	_start
